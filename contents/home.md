@@ -6,15 +6,15 @@ A student at Xi’an Jiaotong-Liverpool University, digging into the world of Ar
 
 #### Contact
 
-Email: Matao.Ye24[at]student.xjtlu.edu.cn
+Email: Matao.Ye24@student.xjtlu.edu.cn
 
 #### Education
--Xi’an Jiaotong-Liverpool University
+- Xi’an Jiaotong-Liverpool University
 MSc in Artificial Intelligence
 Sep 2024 – Present
 Suzhou, China
 
-Zhejiang University of Science & Technology
+- Zhejiang University of Science & Technology
 Bachelor of Civil Engineering
 Sep 2017 – Jun 2021
 Hangzhou, China

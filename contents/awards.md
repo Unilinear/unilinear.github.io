@@ -9,8 +9,6 @@
   Successfully completed the competition in the **Hero Alliance Master Prediction Track**, demonstrating strong innovation, hands-on ability, professional knowledge, and teamwork.  
   *March 19, 2025*
 
--Assistant Engineer Title, 2023
+- Assistant Engineer Title, 2023
 
--Active participant in the Infrastructure Talent Pool, Hangzhou Municipal Health Commission
-
--
+- Active participant in the Infrastructure Talent Pool, Hangzhou Municipal Health Commission
