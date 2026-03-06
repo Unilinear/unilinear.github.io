@@ -1,17 +1,24 @@
 
 
-[![senli1073](https://img.shields.io/badge/senli1073-github-blue?logo=github)](https://github.com/senli1073)
+[![senli1073](https://img.shields.io/badge/Unilinear-github-blue?logo=github)](https://github.com/Unilinear)
 
-He is currently a Fellow in the Department of Earth and Planetary Sciences (EPS) at Harvard University.
+A student at Xi’an Jiaotong-Liverpool University, digging into the world of Artificial Intelligence. 
 
 #### Contact
 
-Email: user[at]fas.harvard.edu
+Email: Matao.Ye24[at]student.xjtlu.edu.cn
 
 #### Education
-M.E., Computer Science and Technology, China University of Mining and Technology, 2022—2025.\
-B.E., Data Science and Big Data Technology, China University of Mining and Technology, 2018—2022.
+-Xi’an Jiaotong-Liverpool University
+MSc in Artificial Intelligence
+Sep 2024 – Present
+Suzhou, China
+
+Zhejiang University of Science & Technology
+Bachelor of Civil Engineering
+Sep 2017 – Jun 2021
+Hangzhou, China
 
 #### Research Interests
-Machine Learning for Seismology; Foundation Model; Observational Seismology; Microseismic Monitoring
+Generative AI; Foundation Model; Computer Vision; Natural Language Processing; Multimodal Learning;
 

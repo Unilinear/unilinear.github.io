@@ -1,12 +1,16 @@
 
-- Outstanding Graduate Award (CUMT), 2025.
+- **Certificate of Participation**, *Fostering Intercultural Communicative Competence*  
+  Collaborative Online International Learning (COIL) program between **Xi’an Jiaotong-Liverpool University (XJTLU)** and **Durban University of Technology (DUT)**.  
+  Participated in an innovative multidisciplinary collaboration project between South Africa and China, focusing on intercultural communication and global teamwork.  
+  *2024*
 
-- National Scholarship for Graduate Students (Ministry of Education, China), 2024.
+- **Certificate of Completion**, *AI Innovation for the Future: Artificial Intelligence Challenge*  
+  Jointly organized by **Xi’an Jiaotong-Liverpool University (XJTLU)** and **Baidu Feijiang**.  
+  Successfully completed the competition in the **Hero Alliance Master Prediction Track**, demonstrating strong innovation, hands-on ability, professional knowledge, and teamwork.  
+  *March 19, 2025*
 
-- First-Prize Graduate Academic Scholarship (CUMT), 2023 & 2024.
+-Assistant Engineer Title, 2023
 
-- Outstanding Undergraduate Thesis Award (Jiangsu, China), 2022.
+-Active participant in the Infrastructure Talent Pool, Hangzhou Municipal Health Commission
 
-- First-Prize Corporate Scholarship (CUMT), 2020.
-
-- First-Prize Undergraduate Academic Scholarship (CUMT), 2019.
+-
