@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Name</title>
+  <meta name="description" content="Personal academic homepage. Replace this description with your own.">
+  <meta name="keywords" content="">
+  <link rel="canonical" href="https://example.com/">
+
+  <!-- Open Graph / Twitter -->
+  <meta property="og:title" content="Your Name">
+  <meta property="og:description" content="Personal academic homepage. Replace this description with your own.">
+  <meta property="og:image" content="">
+  <meta property="og:url" content="https://example.com/">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="">
+
+  <!-- Structured Data (JSON-LD) for Google Knowledge Panel -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Your Name",
+    "url": "https://example.com/",
+    "image": "",
+    "jobTitle": "",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "",
+      "url": ""
+    },
+    "alumniOf": [],
+    "knowsAbout": [],
+    "sameAs": []
+  }
+  </script>
+
+  <!-- Self-hosted Inter font -->
+  <style>
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      src: url(fonts/inter-latin.woff2) format('woff2');
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    }
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      src: url(fonts/inter-latin-ext.woff2) format('woff2');
+      unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+    }
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 500;
+      font-display: swap;
+      src: url(fonts/inter-latin.woff2) format('woff2');
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    }
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 500;
+      font-display: swap;
+      src: url(fonts/inter-latin-ext.woff2) format('woff2');
+      unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+    }
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 700;
+      font-display: swap;
+      src: url(fonts/inter-latin.woff2) format('woff2');
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    }
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 700;
+      font-display: swap;
+      src: url(fonts/inter-latin-ext.woff2) format('woff2');
+      unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+    }
+
+    /* Critical above-the-fold CSS */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+    body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-size: 16px; line-height: 1.65; color: #1a1a2e; background: #fff; -webkit-font-smoothing: antialiased; }
+    a { color: #2563eb; text-decoration: none; }
+    img { max-width: 100%; height: auto; display: block; }
+    .container { max-width: 1000px; margin: 0 auto; padding: 0 24px; }
+    .site-nav { position: fixed; top: 0; left: 0; right: 0; z-index: 1000; background: rgba(255,255,255,0.8); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border-bottom: 1px solid rgba(0,0,0,0.05); transform: translateY(-100%); transition: transform 0.3s ease; }
+    .site-nav.visible { transform: translateY(0); }
+    .site-nav .container { display: flex; align-items: center; justify-content: space-between; height: 56px; }
+    .nav-name { font-weight: 600; font-size: 16px; color: #1a1a2e; }
+    .nav-links { display: flex; gap: 24px; list-style: none; }
+    .nav-links a { font-size: 14px; font-weight: 500; color: #5a6578; }
+    .nav-hamburger { display: none; background: none; border: none; cursor: pointer; padding: 4px; color: #1a1a2e; }
+    .nav-hamburger svg { width: 24px; height: 24px; fill: currentColor; }
+    .hero { padding: 60px 0 20px; }
+    .hero-grid { display: grid; grid-template-columns: 220px 1fr; gap: 40px; align-items: start; }
+    .hero-photo { width: 220px; height: 220px; border-radius: 16px; object-fit: cover; box-shadow: 0 4px 20px rgba(0,0,0,0.10); background: #e5e7eb; }
+    .hero-name { font-size: 36px; font-weight: 700; letter-spacing: -0.03em; margin-bottom: 6px; line-height: 1.2; }
+    .hero-title { font-size: 17px; color: #5a6578; margin-bottom: 20px; }
+    .hero-links { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 20px; }
+    .hero-links a { display: inline-flex; align-items: center; gap: 6px; padding: 7px 16px; border-radius: 999px; font-size: 14px; font-weight: 500; color: #2563eb; background: rgba(37,99,235,0.06); }
+    .hero-links a svg { width: 16px; height: 16px; fill: currentColor; flex-shrink: 0; }
+    .hero-bio { font-size: 16px; color: #5a6578; line-height: 1.7; }
+    .hero-bio p + p { margin-top: 14px; }
+    .js-ready .fade-in { opacity: 0; transform: translateY(24px); transition: opacity 0.3s ease, transform 0.3s ease; }
+    .js-ready .fade-in.visible { opacity: 1; transform: translateY(0); }
+  </style>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<script>document.documentElement.classList.add('js-ready');</script>
+<!-- Skip to content -->
+<a href="#about" class="skip-link">Skip to main content</a>
+
+<!-- ===== Sticky Navigation ===== -->
+<nav class="site-nav" id="site-nav">
+  <div class="container">
+    <span class="nav-name">Your Name</span>
+    <button class="nav-hamburger" aria-label="Toggle navigation">
+      <svg viewBox="0 0 24 24"><path d="M3 6h18v2H3V6zm0 5h18v2H3v-2zm0 5h18v2H3v-2z"/></svg>
+    </button>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#news">News</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#publications">Publications</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- ===== Hero / About ===== -->
+<main>
+<section class="hero" id="about">
+  <div class="container">
+    <div class="hero-grid">
+      <div>
+        <div class="hero-photo" aria-label="Profile photo placeholder"></div>
+      </div>
+      <div>
+        <h1 class="hero-name">Your Name</h1>
+        <p class="hero-title">Your Title / Affiliation</p>
+
+        <div class="hero-links">
+          <a href="mailto:you@example.com">
+            <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+            Email
+          </a>
+          <!-- Add CV, Scholar, GitHub, Twitter, LinkedIn links here -->
+        </div>
+
+        <div class="hero-bio">
+          <p>Short bio paragraph 1. Describe your role and interests.</p>
+          <p>Short bio paragraph 2. Education and background.</p>
+          <p>Short bio paragraph 3. Research interests or contact note.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== News ===== -->
+<section class="alt-bg" id="news">
+  <div class="container">
+    <h2 class="section-heading">News</h2>
+    <div class="news-list">
+      <div class="news-item fade-in">
+        <span class="news-date">Month YYYY</span>
+        <span class="news-text">Example news entry. Replace with your own.</span>
+      </div>
+    </div>
+    <button class="news-toggle" id="news-toggle" aria-expanded="false" hidden>Show more</button>
+  </div>
+</section>
+
+<!-- ===== Experience ===== -->
+<section id="experience">
+  <div class="container">
+    <h2 class="section-heading">Experience</h2>
+    <div class="affil-timeline">
+      <div class="affil-item fade-in">
+        <div class="affil-logo" style="width:160px;height:160px;background:#f0f1f5;border-radius:12px;"></div>
+        <div class="affil-info">
+          <div class="affil-role">Role</div>
+          <div class="affil-org">Organization</div>
+          <div class="affil-dates">YYYY — YYYY</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Selected Research ===== -->
+<section class="alt-bg" id="research">
+  <div class="container">
+    <h2 class="section-heading">Selected Research</h2>
+    <div class="research-grid">
+      <!-- Add research items here. Example structure:
+      <div class="research-item fade-in">
+        <a href="#"><img src="path/to/image.jpg" class="research-video" alt="Project"></a>
+        <a href="#" class="research-label">Project Name</a>
+      </div>
+      -->
+    </div>
+  </div>
+</section>
+
+<!-- ===== Publications ===== -->
+<section id="publications">
+  <div class="container">
+    <h2 class="section-heading">Publications</h2>
+    <div class="pub-list">
+      <!-- Add publication cards here. Example structure:
+      <div class="pub-card fade-in">
+        <a href="#"><img src="path/to/thumb.jpg" class="pub-thumb" alt=""></a>
+        <div>
+          <div class="pub-title"><a href="#">Paper Title</a></div>
+          <div class="pub-authors">Author A, <strong>You</strong>, Author B</div>
+          <div class="pub-venue"><em>Venue YYYY</em></div>
+          <div class="pub-actions">
+            <a href="#">paper</a>
+            <a href="#">code</a>
+          </div>
+        </div>
+      </div>
+      -->
+    </div>
+  </div>
+</section>
+
+<!-- ===== Media Coverage ===== -->
+<section class="alt-bg" id="media" hidden>
+  <div class="container">
+    <h2 class="section-heading">Media Coverage</h2>
+    <div class="media-cloud fade-in">
+      <!-- Add <a class="media-logo"><img></a> entries here. -->
+    </div>
+  </div>
+</section>
+
+<!-- ===== Service ===== -->
+<section id="service">
+  <div class="container">
+    <h2 class="section-heading">Service</h2>
+    <div class="service-list">
+      <div class="service-row fade-in"><span class="service-name">Conference Reviewer</span><span class="service-values"></span></div>
+      <div class="service-row fade-in"><span class="service-name">Journal Reviewer</span><span class="service-values"></span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Visitors Globe ===== -->
+<section id="visitors" class="globe-section alt-bg">
+  <div class="container">
+    <h2 class="section-heading">Visitors</h2>
+    <div class="globe-wrapper fade-in">
+      <canvas id="globe-canvas" class="globe-canvas"></canvas>
+      <p id="globe-stats" class="globe-stats"></p>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ===== Scripts ===== -->
+<script src="js/main.js" defer></script>
+<script type="module" src="js/globe.js"></script>
+
+</body>
+</html>
