@@ -140,7 +140,7 @@ section.alt-bg {
 .hero {
   padding: 84px 0 28px;
   min-height: 68vh;
-  background-image: linear-gradient(rgba(7, 19, 43, 0.34), rgba(7, 19, 43, 0.18)), url('input-files/background.png');
+  background-image: linear-gradient(rgba(7, 19, 43, 0.34), rgba(7, 19, 43, 0.18)), url('images/background.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
