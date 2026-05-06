@@ -138,7 +138,12 @@ section.alt-bg {
 
 /* ===== Hero ===== */
 .hero {
-  padding: 60px 0 20px;
+  padding: 84px 0 28px;
+  min-height: 68vh;
+  background-image: linear-gradient(rgba(7, 19, 43, 0.34), rgba(7, 19, 43, 0.18)), url('input-files/background.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .hero-grid {
@@ -146,6 +151,13 @@ section.alt-bg {
   grid-template-columns: 220px 1fr;
   gap: 40px;
   align-items: start;
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 18px;
+  padding: 28px;
+  box-shadow: 0 18px 50px rgba(16, 24, 40, 0.2);
 }
 
 .hero-photo {
@@ -154,6 +166,7 @@ section.alt-bg {
   border-radius: var(--radius-lg);
   object-fit: cover;
   box-shadow: 0 4px 20px rgba(0,0,0,0.10);
+  background: #dbe3ef;
 }
 
 .hero-name {
@@ -395,6 +408,10 @@ section.alt-bg {
   padding: 16px;
   box-shadow: var(--shadow-sm);
   transition: box-shadow 0.25s ease, transform 0.25s ease, border-color 0.25s ease;
+}
+
+.pub-card > div:only-child {
+  grid-column: 1 / -1;
 }
 
 .pub-card:hover {

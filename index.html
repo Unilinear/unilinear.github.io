@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Your Name</title>
-  <meta name="description" content="Personal academic homepage. Replace this description with your own.">
-  <meta name="keywords" content="">
+  <title>Matao Ye</title>
+  <meta name="description" content="Matao Ye — MSc student in Artificial Intelligence at Xi'an Jiaotong-Liverpool University. Research on generative AI, diffusion / flow matching, and controllable face generation.">
+  <meta name="keywords" content="Matao Ye, generative AI, diffusion models, flow matching, kinship face synthesis, InheriDiffusion, XJTLU, controllable face generation">
   <link rel="canonical" href="https://example.com/">
 
   <!-- Open Graph / Twitter -->
-  <meta property="og:title" content="Your Name">
-  <meta property="og:description" content="Personal academic homepage. Replace this description with your own.">
+  <meta property="og:title" content="Matao Ye — Generative AI &amp; Controllable Face Generation">
+  <meta property="og:description" content="MSc student in AI at XJTLU. Diffusion for kinship face synthesis (InheriDiffusion @ CVPRW 2026).">
   <meta property="og:image" content="">
   <meta property="og:url" content="https://example.com/">
   <meta property="og:type" content="website">
@@ -22,17 +22,28 @@
   {
     "@context": "https://schema.org",
     "@type": "Person",
-    "name": "Your Name",
+    "name": "Matao Ye",
     "url": "https://example.com/",
     "image": "",
-    "jobTitle": "",
+    "jobTitle": "MSc Student in Artificial Intelligence",
     "worksFor": {
-      "@type": "Organization",
-      "name": "",
-      "url": ""
+      "@type": "CollegeOrUniversity",
+      "name": "Xi'an Jiaotong-Liverpool University",
+      "url": "https://www.xjtlu.edu.cn/"
     },
-    "alumniOf": [],
-    "knowsAbout": [],
+    "alumniOf": [
+      {
+        "@type": "CollegeOrUniversity",
+        "name": "Xi'an Jiaotong-Liverpool University",
+        "url": "https://www.xjtlu.edu.cn/"
+      },
+      {
+        "@type": "CollegeOrUniversity",
+        "name": "Zhejiang University of Science & Technology",
+        "url": "https://www.zust.edu.cn/"
+      }
+    ],
+    "knowsAbout": ["Generative AI", "Diffusion Models", "Flow Matching", "Controllable Face Generation", "Kinship Face Synthesis", "Large Language Models", "LoRA Fine-Tuning"],
     "sameAs": []
   }
   </script>
@@ -103,9 +114,28 @@
     .nav-links a { font-size: 14px; font-weight: 500; color: #5a6578; }
     .nav-hamburger { display: none; background: none; border: none; cursor: pointer; padding: 4px; color: #1a1a2e; }
     .nav-hamburger svg { width: 24px; height: 24px; fill: currentColor; }
-    .hero { padding: 60px 0 20px; }
-    .hero-grid { display: grid; grid-template-columns: 220px 1fr; gap: 40px; align-items: start; }
-    .hero-photo { width: 220px; height: 220px; border-radius: 16px; object-fit: cover; box-shadow: 0 4px 20px rgba(0,0,0,0.10); background: #e5e7eb; }
+    .hero {
+      padding: 84px 0 28px;
+      min-height: 68vh;
+      background-image: linear-gradient(rgba(7, 19, 43, 0.34), rgba(7, 19, 43, 0.18)), url('images/background.png');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 220px 1fr;
+      gap: 40px;
+      align-items: start;
+      background: rgba(255, 255, 255, 0.9);
+      border: 1px solid rgba(255, 255, 255, 0.45);
+      backdrop-filter: blur(4px);
+      -webkit-backdrop-filter: blur(4px);
+      border-radius: 18px;
+      padding: 28px;
+      box-shadow: 0 18px 50px rgba(16, 24, 40, 0.2);
+    }
+    .hero-photo { width: 220px; height: 220px; border-radius: 16px; object-fit: cover; box-shadow: 0 4px 20px rgba(0,0,0,0.10); background: #dbe3ef; }
     .hero-name { font-size: 36px; font-weight: 700; letter-spacing: -0.03em; margin-bottom: 6px; line-height: 1.2; }
     .hero-title { font-size: 17px; color: #5a6578; margin-bottom: 20px; }
     .hero-links { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 20px; }
@@ -128,7 +158,7 @@
 <!-- ===== Sticky Navigation ===== -->
 <nav class="site-nav" id="site-nav">
   <div class="container">
-    <span class="nav-name">Your Name</span>
+    <span class="nav-name">Matao Ye</span>
     <button class="nav-hamburger" aria-label="Toggle navigation">
       <svg viewBox="0 0 24 24"><path d="M3 6h18v2H3V6zm0 5h18v2H3v-2zm0 5h18v2H3v-2z"/></svg>
     </button>
@@ -137,6 +167,7 @@
       <li><a href="#news">News</a></li>
       <li><a href="#experience">Experience</a></li>
       <li><a href="#publications">Publications</a></li>
+      <li><a href="#awards">Awards</a></li>
     </ul>
   </div>
 </nav>
@@ -150,21 +181,26 @@
         <div class="hero-photo" aria-label="Profile photo placeholder"></div>
       </div>
       <div>
-        <h1 class="hero-name">Your Name</h1>
-        <p class="hero-title">Your Title / Affiliation</p>
+        <h1 class="hero-name">Matao Ye</h1>
+        <p class="hero-title">MSc in Artificial Intelligence, XJTLU &nbsp;·&nbsp; Suzhou, China</p>
 
         <div class="hero-links">
-          <a href="mailto:you@example.com">
+          <a href="mailto:moto4ye@gmail.com">
             <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
             Email
           </a>
-          <!-- Add CV, Scholar, GitHub, Twitter, LinkedIn links here -->
+          <a href="resume.html">
+            <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm-1 2l5 5h-5V4zM6 20V4h5v7h7v9H6z"/></svg>
+            CV
+          </a>
         </div>
 
         <div class="hero-bio">
-          <p>Short bio paragraph 1. Describe your role and interests.</p>
-          <p>Short bio paragraph 2. Education and background.</p>
-          <p>Short bio paragraph 3. Research interests or contact note.</p>
+          <p>I am a Master&rsquo;s student in Artificial Intelligence at <a href="https://www.xjtlu.edu.cn/" target="_blank" rel="noopener">Xi&rsquo;an Jiaotong-Liverpool University</a>, working on generative AI and controllable face generation under the supervision of Dr. <strong>Xianxu Hou</strong>.</p>
+          <p>My current research reformulates kinship face synthesis as identity-aware <em>diffusion</em> on top of frozen personalised diffusion backbones &mdash; with the goal of generating child faces that are faithful to their parents while maintain fidelity.</p>
+          <p>Before AI, I earned a B.Eng. in Civil Engineering and spent two years as an infrastructure engineer at Hangzhou Red Cross Hospital, where I built Stable Diffusion + ControlNet workflows for renovation design and ESP32-CAM edge-vision pipelines. </p>
+
+          <p>My Motto &mdash; <em>&ldquo; Learn to do it , do it to learn. 知行合一&rdquo;</em> </p>
         </div>
       </div>
     </div>
@@ -176,9 +212,26 @@
   <div class="container">
     <h2 class="section-heading">News</h2>
     <div class="news-list">
+
       <div class="news-item fade-in">
-        <span class="news-date">Month YYYY</span>
-        <span class="news-text">Example news entry. Replace with your own.</span>
+        <span class="news-date">Apr 2026</span>
+        <span class="news-text"><strong>InheriDiffusion</strong> accepted to the <a href="#publications">CVPR 2026 HiGen Workshop</a>. <span class="news-new">new</span></span>
+      </div>
+      <div class="news-item fade-in">
+        <span class="news-date">2026</span>
+        <span class="news-text">Trying to be rawarded the <strong>Distinction Track</strong> for the MSc AI programme at XJTLU.</span>
+      </div>
+      <div class="news-item fade-in">
+        <span class="news-date">Sep 2025</span>
+        <span class="news-text">Started my MSc dissertation on <em>diffusion-based kinship face synthesis</em>, supervised by Dr. Xianxu Hou.</span>
+      </div>
+      <div class="news-item fade-in">
+        <span class="news-date">2025</span>
+        <span class="news-text"><strong>National Top 5</strong>, &ldquo;Zhi Chuang Wei Lai&rdquo; AI Challenge (XJTLU &times; Baidu PaddlePaddle).</span>
+      </div>
+      <div class="news-item fade-in">
+        <span class="news-date">Sep 2024</span>
+        <span class="news-text">Joined XJTLU&rsquo;s School of AI and Advanced Computing as an MSc student in Artificial Intelligence.</span>
       </div>
     </div>
     <button class="news-toggle" id="news-toggle" aria-expanded="false" hidden>Show more</button>
@@ -191,28 +244,40 @@
     <h2 class="section-heading">Experience</h2>
     <div class="affil-timeline">
       <div class="affil-item fade-in">
-        <div class="affil-logo" style="width:160px;height:160px;background:#f0f1f5;border-radius:12px;"></div>
+        <img class="affil-logo" src="icons/Zhejiang%20University%20of%20Science%20%26%20Technology.png" alt="Zhejiang University of Science &amp; Technology logo">
         <div class="affil-info">
-          <div class="affil-role">Role</div>
-          <div class="affil-org">Organization</div>
-          <div class="affil-dates">YYYY — YYYY</div>
+          <div class="affil-role">B.Eng., Civil Engineering</div>
+          <div class="affil-org">Zhejiang University of Science &amp; Technology</div>
+          <div class="affil-dates">Sept 2017 &mdash; June 2021</div>
         </div>
       </div>
+      <div class="affil-item fade-in">
+        <img class="affil-logo" src="icons/Hangzhou%20Red%20Cross%20Hospital.png" alt="Hangzhou Red Cross Hospital logo">
+        <div class="affil-info">
+          <div class="affil-role">Engineer, General Affairs &amp; Infrastructure</div>
+          <div class="affil-org">Hangzhou Red Cross Hospital</div>
+          <div class="affil-dates">Mar 2022 &mdash; Jul 2024</div>
+        </div>
+      </div>
+      <div class="affil-item fade-in">
+        <img class="affil-logo" src="icons/xjtlu.png" alt="Xi'an Jiaotong-Liverpool University logo">
+        <div class="affil-info">
+          <div class="affil-role">MSc, Artificial Intelligence</div>
+          <div class="affil-org">Xi&rsquo;an Jiaotong-Liverpool University</div>
+          <div class="affil-dates">Sep 2024 &mdash; Jul 2026 (expected)</div>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
 
 <!-- ===== Selected Research ===== -->
-<section class="alt-bg" id="research">
+<section class="alt-bg" id="research" hidden>
   <div class="container">
     <h2 class="section-heading">Selected Research</h2>
     <div class="research-grid">
-      <!-- Add research items here. Example structure:
-      <div class="research-item fade-in">
-        <a href="#"><img src="path/to/image.jpg" class="research-video" alt="Project"></a>
-        <a href="#" class="research-label">Project Name</a>
-      </div>
-      -->
+      <!-- Add research items (image/video + label) here when you have media to showcase. -->
     </div>
   </div>
 </section>
@@ -222,20 +287,21 @@
   <div class="container">
     <h2 class="section-heading">Publications</h2>
     <div class="pub-list">
-      <!-- Add publication cards here. Example structure:
+
+      <!-- 1. InheriDiffusion -->
       <div class="pub-card fade-in">
-        <a href="#"><img src="path/to/thumb.jpg" class="pub-thumb" alt=""></a>
         <div>
-          <div class="pub-title"><a href="#">Paper Title</a></div>
-          <div class="pub-authors">Author A, <strong>You</strong>, Author B</div>
-          <div class="pub-venue"><em>Venue YYYY</em></div>
-          <div class="pub-actions">
-            <a href="#">paper</a>
-            <a href="#">code</a>
+          <div class="pub-title">InheriDiffusion: Inheritance-Aware Diffusion Models for Kinship Face Synthesis</div>
+          <div class="pub-authors"><strong>Matao Ye</strong>, Xianxu Hou, et al.</div>
+          <div class="pub-venue">
+            <em>CVPR 2026 Workshop (HiGen)</em>
+            <span class="badge badge-green">Accepted</span>
           </div>
+          <p style="margin-top:8px;color:#5a6578;font-size:15px;line-height:1.6;">We keep a pretrained personalised diffusion backbone frozen and learn <em>inheritance</em> directly inside its identity-embedding space. A lightweight <strong>Identity Inheritance Encoder</strong> (bidirectional cross-attention + nonlinear blending) and a <strong>Parental Guidance Attention</strong> module re-inject parental embeddings throughout denoising to restore fine-grained hereditary detail without any backbone fine-tuning. Substantially improves hereditary consistency over prior methods on TSKinFace, FF-Database and FIW.</p>
         </div>
       </div>
-      -->
+
+
     </div>
   </div>
 </section>
@@ -250,19 +316,38 @@
   </div>
 </section>
 
-<!-- ===== Service ===== -->
-<section id="service">
+<!-- ===== Skills ===== -->
+<section id="skills">
   <div class="container">
-    <h2 class="section-heading">Service</h2>
+    <h2 class="section-heading">Skills</h2>
     <div class="service-list">
-      <div class="service-row fade-in"><span class="service-name">Conference Reviewer</span><span class="service-values"></span></div>
-      <div class="service-row fade-in"><span class="service-name">Journal Reviewer</span><span class="service-values"></span></div>
+      <div class="service-row fade-in"><span class="service-name">Generative Models</span><span class="service-values">Diffusion (DDPM, personalised diffusion, ControlNet) &middot; Flow Matching &middot; GAN &middot; VAE / VAE-GAN</span></div>
+      <div class="service-row fade-in"><span class="service-name">LLM &amp; NLP</span><span class="service-values">LoRA &amp; NF4 4-bit fine-tuning &middot; BERT &middot; RAG pipelines &middot; HuggingFace Transformers / Diffusers</span></div>
+      <div class="service-row fade-in"><span class="service-name">Vision</span><span class="service-values">ResNet &middot; ERFNet &middot; OpenCV &middot; classical image processing &middot; CelebA / TSKinFace / FIW / FF-Database</span></div>
+      <div class="service-row fade-in"><span class="service-name">Programming</span><span class="service-values">Python &middot; PyTorch &middot; PaddlePaddle &middot; LaTeX &middot; Git &middot; Linux server setup &amp; ops</span></div>
+      <div class="service-row fade-in"><span class="service-name">Other Tooling</span><span class="service-values">Stable Diffusion + ControlNet &middot; Whisper &middot; So-VITS-SVC &middot; UVR5 &middot; ESP32-CAM (edge inference)</span></div>
+      <div class="service-row fade-in"><span class="service-name">Languages</span><span class="service-values">Chinese (native) &middot; English (academic working proficiency)</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Honors &amp; Awards ===== -->
+<section class="alt-bg" id="awards">
+  <div class="container">
+    <h2 class="section-heading">Honors &amp; Awards</h2>
+    <div class="service-list">
+      <div class="service-row fade-in"><span class="service-name">2026</span><span class="service-values"><strong>Distinction Track &mdash; MSc AI</strong>, weighted average 78.13% across 8 completed modules, XJTLU</span></div>
+      <div class="service-row fade-in"><span class="service-name">2026</span><span class="service-values"><strong>Paper Accepted</strong>, InheriDiffusion &mdash; CVPR Workshop 2026 (HiGen)</span></div>
+      <div class="service-row fade-in"><span class="service-name">2025</span><span class="service-values"><strong>National Top 5</strong>, &ldquo;Zhi Chuang Wei Lai&rdquo; AI Challenge &mdash; XJTLU &times; Baidu PaddlePaddle</span></div>
+      <div class="service-row fade-in"><span class="service-name">2025</span><span class="service-values"><strong>COIL International Collaboration</strong>, XJTLU &times; Durban University of Technology (South Africa)</span></div>
+      <div class="service-row fade-in"><span class="service-name">2023</span><span class="service-values"><strong>Assistant Engineer</strong>, Job Title Certification</span></div>
+      <div class="service-row fade-in"><span class="service-name">2023</span><span class="service-values"><strong>Active Participant</strong>, Hangzhou Municipal Health Infrastructure Talent Pool</span></div>
     </div>
   </div>
 </section>
 
 <!-- ===== Visitors Globe ===== -->
-<section id="visitors" class="globe-section alt-bg">
+<section id="visitors" class="globe-section">
   <div class="container">
     <h2 class="section-heading">Visitors</h2>
     <div class="globe-wrapper fade-in">
