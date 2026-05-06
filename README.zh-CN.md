@@ -1,3 +1,8 @@
+本主页项目基于 [Rawal Khirodkar](https://rawalkhirodkar.github.io/) 的个人主页模板改造而来。感谢 Rawal Khirodkar 开源分享原始项目与设计思路。
+
+原始仓库：[rawalkhirodkar/rawalkhirodkar.github.io](https://github.com/rawalkhirodkar/rawalkhirodkar.github.io)
+
+---
 # 个人主页模板 · 使用与维护指南
 
 这是一个**纯静态**的个人 / 学术主页模板：只有 HTML + CSS + 原生 JS，没有打包工具、没有 npm 依赖、不需要构建。直接用任意静态服务器托管即可（GitHub Pages、Netlify、Vercel、Nginx 都行）。
@@ -210,3 +215,4 @@ resume.html ──── docs/cv.pdf （需要自行添加）
 - 加 favicon 和头像
 - 决定要不要地球版块；要的话申请 GoatCounter 并加 secrets
 - 部署到 GitHub Pages：仓库设置 Pages → Source 选 `main` 分支根目录即可
+

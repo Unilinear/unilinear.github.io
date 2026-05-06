@@ -161,12 +161,34 @@ section.alt-bg {
 }
 
 .hero-photo {
+  position: relative;
+  overflow: hidden;
   width: 220px;
   height: 220px;
   border-radius: var(--radius-lg);
-  object-fit: cover;
   box-shadow: 0 4px 20px rgba(0,0,0,0.10);
   background: #dbe3ef;
+}
+
+.hero-photo-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.22s ease;
+}
+
+.hero-photo-crazy {
+  opacity: 0;
+}
+
+.hero-photo:hover .hero-photo-normal {
+  opacity: 0;
+}
+
+.hero-photo:hover .hero-photo-crazy {
+  opacity: 1;
 }
 
 .hero-name {
@@ -847,6 +869,10 @@ button:focus-visible {
   }
 
   .affil-logo {
+    transition: none;
+  }
+
+  .hero-photo-img {
     transition: none;
   }
 
