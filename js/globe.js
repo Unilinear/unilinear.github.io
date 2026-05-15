@@ -76,22 +76,6 @@ function animateCount(el, target, duration) {
     // No data yet — globe renders without markers
   }
 
-  // Try live visitor count from GoatCounter public counter API.
-  // This endpoint works without authentication when "Allow adding visitor
-  // counts on your website" is enabled in GoatCounter site settings.
-  try {
-    var liveRes = await fetch('https://rawalkhirodkar.goatcounter.com/counter/%2F.json');
-    if (liveRes.ok) {
-      var liveData = await liveRes.json();
-      var liveCount = parseInt((liveData.count || '0').replace(/,/g, ''), 10);
-      if (liveCount > totalVisitors) {
-        totalVisitors = liveCount;
-      }
-    }
-  } catch (e) {
-    // Public counter not available — use static data
-  }
-
   // Update stats display with animated count
   var statsEl = document.getElementById('globe-stats');
   if (statsEl && totalVisitors > 0) {
