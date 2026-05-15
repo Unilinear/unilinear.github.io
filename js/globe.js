@@ -153,7 +153,7 @@ function animateCount(el, target, duration) {
     mapSamples: 16000,
     mapBrightness: 8,
     baseColor: [0.95, 0.97, 1.0],
-    markerColor: [0.38, 0.74, 1.0],
+    markerColor: [0.68, 0.86, 1.0],
     glowColor: [0.9, 0.93, 1.0],
     markers: markers,
     onRender: function (state) {
