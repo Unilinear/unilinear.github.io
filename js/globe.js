@@ -19,6 +19,11 @@ const COORDS = {
   BE: [50.5, 4.5]
 };
 
+function getInitialPhi(markers) {
+  if (markers.length === 0) return 0;
+  return (markers[0].location[1] * Math.PI) / 180;
+}
+
 // Animate a number counting up from 0 to target
 function animateCount(el, target, duration) {
   if (target <= 0) return;
@@ -67,7 +72,7 @@ function animateCount(el, target, duration) {
         if (coord) {
           markers.push({
             location: [coord[0], coord[1]],
-            size: 0.04 + (loc.count / maxCount) * 0.12
+            size: 0.08 + (loc.count / maxCount) * 0.14
           });
         }
       });
@@ -112,7 +117,7 @@ function animateCount(el, target, duration) {
   canvas.style.width = currentSize + 'px';
   canvas.style.height = currentSize + 'px';
 
-  var phi = 0;
+  var phi = getInitialPhi(markers);
   var autoRotateSpeed = 0.003;
   var pointerDown = false;
   var pointerLastX = 0;
@@ -141,14 +146,14 @@ function animateCount(el, target, duration) {
     devicePixelRatio: dpr,
     width: currentSize * dpr,
     height: currentSize * dpr,
-    phi: 0,
+    phi: phi,
     theta: 0.25,
     dark: 0,
     diffuse: 1.4,
     mapSamples: 16000,
     mapBrightness: 8,
     baseColor: [0.95, 0.97, 1.0],
-    markerColor: [0.145, 0.388, 0.922],
+    markerColor: [0.38, 0.74, 1.0],
     glowColor: [0.9, 0.93, 1.0],
     markers: markers,
     onRender: function (state) {
