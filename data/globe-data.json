@@ -1,11 +1,6 @@
 {
   "period": "all time",
-  "updated": "2026-06-01",
-  "total_visitors": 1,
-  "locations": [
-    {
-      "country": "US",
-      "count": 1
-    }
-  ]
+  "updated": "2026-06-02",
+  "total_visitors": 0,
+  "locations": []
 }
