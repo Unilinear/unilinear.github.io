@@ -1,6 +1,15 @@
 {
   "period": "all time",
-  "updated": "2026-08-04",
-  "total_visitors": 0,
-  "locations": []
+  "updated": "2026-08-07",
+  "total_visitors": 3,
+  "locations": [
+    {
+      "country": "US",
+      "count": 2
+    },
+    {
+      "country": "HK",
+      "count": 1
+    }
+  ]
 }
