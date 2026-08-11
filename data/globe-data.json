@@ -1,10 +1,14 @@
 {
   "period": "all time",
-  "updated": "2026-08-07",
-  "total_visitors": 3,
+  "updated": "2026-08-11",
+  "total_visitors": 6,
   "locations": [
     {
       "country": "US",
+      "count": 3
+    },
+    {
+      "country": "JP",
       "count": 2
     },
     {
