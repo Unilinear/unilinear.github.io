@@ -1,6 +1,11 @@
 {
   "period": "all time",
-  "updated": "2026-11-03",
-  "total_visitors": 0,
-  "locations": []
+  "updated": "2026-11-07",
+  "total_visitors": 1,
+  "locations": [
+    {
+      "country": "CA",
+      "count": 1
+    }
+  ]
 }
